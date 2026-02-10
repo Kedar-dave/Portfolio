@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kedar Dave</title>
+    <link rel="stylesheet" href="css/styles.css?v=15">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+
+        <!-- Contact Section -->
+        <section class="contact-container">
+            <!-- Standardized Section Title -->
+            <div class="section-title">Let's Connect</div>
+            <p style="color: var(--text-secondary); margin-bottom: 40px;">
+                Have a project in mind or just want to chat about AI? Drop me a message below.
+            </p>
+
+            <form action="mailto:kedardave2909@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Subject</label>
+                    <input type="text" name="subject" class="form-input" placeholder="Discussion Topic">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" class="form-textarea" placeholder="How can we collaborate?"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn"
+                    style="width: 100%; justify-content: center; background: var(--text-primary); color: white; border: none;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+
+            <div style="text-align: center; margin-top: 32px;">
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                    Or email directly at <a href="mailto:kedardave2909@gmail.com"
+                        style="color: var(--accent-primary); text-decoration: none; font-weight: 500;">kedardave2909@gmail.com</a>
+                </p>
+            </div>
+        </section>
+
+    </div> <!-- End Container -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-name">Kedar Dave</div>
+                    <div class="footer-tagline">Building the bridge between Human & Machine.</div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="https://github.com/Kedar-dave" target="_blank" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/kd29/" target="_blank" class="footer-link">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 Kedar Dave. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

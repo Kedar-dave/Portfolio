@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedar Dave | ML Engineer</title>
+    <link rel="stylesheet" href="css/styles.css?v=15">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero">
+            <div class="hero-profile-container">
+                <!-- Headshot & Name Area -->
+                <div class="profile-header">
+                    <img src="assets/profile-cropped.jpg?v=1" alt="Kedar Dave" class="profile-avatar">
+                    <div class="profile-name">KEDAR DAVE</div>
+                </div>
+
+                <div class="hero-content">
+                    <h1>
+                        I design <span class="text-gradient">AI systems</span> that think across text, see, and
+                        scale.
+                    </h1>
+
+                    <div class="hero-subline">
+                        Machine Learning Engineer · LLMs · Multimodal AI · MLOps
+                    </div>
+
+                    <div class="hero-links">
+                        <a id="link-github" target="_blank" class="btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a id="link-linkedin" target="_blank" class="btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="contact.html" class="btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a id="link-resume" class="btn">
+                            <i class="fas fa-file-alt"></i> Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PROJECTS SECTION -->
+        <section class="projects">
+            <div class="section-title">My Works</div>
+
+            <div class="project-list">
+                <!-- Project 0: IntelliSearch -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">IntelliSearch</h2>
+                        <a id="link-intellisearch" target="_blank" class="card-btn" aria-label="View Project">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-story">
+                        <div class="story-block">
+                            <h4>Problem</h4>
+                            <p>Keyword search fails to capture context in large PDF datasets, making information
+                                retrieval inefficient.</p>
+                        </div>
+                        <div class="story-block">
+                            <h4>Solution</h4>
+                            <p>Built a semantic search engine using OCR and vector embeddings to understand document
+                                meaning.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <span>Semantic Search</span>
+                        <span><i class="fas fa-database"></i> MongoDB</span>
+                    </div>
+
+                    <div class="project-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">Vector Embeddings</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </article>
+
+                <!-- Project 1: Plottwist -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">Plottwist</h2>
+                        <a id="btn-plottwist" target="_blank" class="card-btn" aria-label="View Project">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-story">
+                        <div class="story-block">
+                            <h4>Problem</h4>
+                            <p>Manual chart interpretation is slow and lacks metadata.</p>
+                        </div>
+                        <div class="story-block">
+                            <h4>Solution</h4>
+                            <p>Multimodal pipeline using YOLOv5, OCR, and LLMs.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <span>89.2% mAP</span>
+                        <span>70% Faster</span>
+                    </div>
+
+                    <div class="project-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">YOLOv5</span>
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">LLMs</span>
+                    </div>
+                </article>
+
+                <!-- Project 2: ImposterCreator -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">ImposterCreator</h2>
+                        <a id="btn-imposter" target="_blank" class="card-btn" aria-label="View Project">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-story">
+                        <div class="story-block">
+                            <h4>Problem</h4>
+                            <p>Deepfake generation required complex tools and expert knowledge.</p>
+                        </div>
+                        <div class="story-block">
+                            <h4>Solution</h4>
+                            <p>Motion transfer framework via First Order Motion Model.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <span>96.4% Success</span>
+                        <span>Realistic Motion</span>
+                    </div>
+
+                    <div class="project-stack">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                </article>
+
+                <!-- Project 3: Sales Analysis Dashboard -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">Sales Analysis Dashboard</h2>
+                        <a id="link-salesDashboard" target="_blank" class="card-btn" aria-label="View Project">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-story">
+                        <div class="story-block">
+                            <h4>Problem</h4>
+                            <p>Fragmented sales data across regions hindered strategic decision-making and performance
+                                tracking.</p>
+                        </div>
+                        <div class="story-block">
+                            <h4>Solution</h4>
+                            <p>Unified PowerBI dashboard with star schema modeling for 6-month rolling insights.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <span>$163K East Coast Sales</span>
+                        <span>157% Return Rate Analysis</span>
+                    </div>
+
+                    <div class="project-stack">
+                        <span class="tech-tag">PowerBI</span>
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">Data Modeling</span>
+                        <span class="tech-tag">DAX</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. EXPERIENCE SECTION -->
+        <section class="experience-container">
+            <div class="section-title white-line">My Journey</div>
+
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="role-title">Artificial Intelligence Intern</h3>
+                        <div class="company-name">Plutomen Technologies</div>
+                        <div class="role-meta">Sept 2023 – May 2024 · Ahmedabad, India</div>
+                        <p class="role-description">
+                            SaaS Product - Building a RAG pipeline for the internal knowledge base of the company.
+                            Optimized vector search retrieval and implemented LLM-based responses.
+                        </p>
+                        <div class="role-tags">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">Vector DB</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="role-title">Machine Learning Engineer Intern</h3>
+                        <div class="company-name">AcmeGrade</div>
+                        <div class="role-meta">May 2022 – Jul 2022 · Bengaluru, India</div>
+                        <p class="role-description">
+                            Detected different types of leaf diseases using CNN classification (ResNet50).
+                            Improved model accuracy by 15% through data augmentation and hyperparameter tuning.
+                        </p>
+                        <div class="role-tags">
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CREDENTIALS SECTION -->
+        <section class="credentials">
+            <div class="credentials-grid">
+
+                <!-- Education -->
+                <div class="credential-block">
+                    <h3>Education</h3>
+                    <div class="credential-item">
+                        <div class="credential-title">Seneca Polytechnic</div>
+                        <div class="credential-subtitle">Cloud Computing & Admin</div>
+                        <div class="credential-meta">2025 · Dean's List · GPA 4.0</div>
+                        <div class="project-stack" style="margin-top: 12px;">
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="credential-item" style="margin-top: 24px;">
+                        <div class="credential-title">Humber Polytechnic</div>
+                        <div class="credential-subtitle">Artificial Intelligence with Machine Learning</div>
+                        <div class="credential-meta">2024 – 2025 · GPA 3.5</div>
+                        <div class="project-stack" style="margin-top: 12px;">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Reinforcement Learning</span>
+                            <span class="tech-tag">Generative AI</span>
+                        </div>
+                    </div>
+
+                    <div class="credential-item" style="margin-top: 24px;">
+                        <div class="credential-title">Charotar University of Science and Technology</div>
+                        <div class="credential-subtitle">Bachelors of Information Technology</div>
+                        <div class="credential-meta">2020 – 2024 · GPA 3.9</div>
+                        <div class="project-stack" style="margin-top: 12px;">
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">Database Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills & Publication -->
+                <div class="credential-block">
+                    <h3>Research</h3>
+                    <a id="link-research" class="project-card" target="_blank"
+                        style="padding: 24px; border-radius: 12px; margin-top: 16px; margin-bottom: 40px; display: block; text-decoration: none;">
+                        <div
+                            style="font-weight: 600; font-family: 'Space Grotesk', sans-serif; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: start;">
+                            <span>Approaches and Applications of Lane Detection</span>
+                            <i class="fas fa-external-link-alt"
+                                style="color: var(--accent-primary); font-size: 0.9rem;"></i>
+                        </div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+                            ICSCSA 2024
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-primary);">
+                            Analysis of lane detection methodologies for autonomous vehicle progression.
+                        </div>
+                    </a>
+
+                    <h3>Technical Skills</h3>
+                    <div class="project-stack" style="gap: 12px;">
+                        <!-- AI & ML -->
+                        <span class="tech-tag">Generative AI</span>
+                        <span class="tech-tag">LLM Systems</span>
+                        <span class="tech-tag">RAG Pipelines</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">MLOps</span>
+
+                        <!-- Cloud & DevOps -->
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">CI/CD</span>
+
+                        <!-- CS & Development -->
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">Algorithms</span>
+                        <span class="tech-tag">System Design</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Git</span>
+
+                        <!-- Data & Tools -->
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">PowerBI</span>
+                        <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">Business Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!-- End Credentials -->
+
+        <!-- End Container -->
+
+        <!-- Footer outside container for full width -->
+
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-name">Kedar Dave</div>
+                    <div class="footer-tagline">Building the bridge between Human & Machine.</div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://github.com/Kedar-dave" target="_blank" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/kd29/" target="_blank" class="footer-link">LinkedIn</a>
+                    <a href="assets/resume.pdf" target="_blank" class="footer-link">Resume</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 Kedar Dave. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+
+</body>
+
+</html>
