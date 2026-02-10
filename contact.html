@@ -26,10 +26,21 @@
                 Have a project in mind or just want to chat about AI? Drop me a message below.
             </p>
 
-            <form action="mailto:kedardave2909@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+            <form id="contact-form" class="contact-form">
+                <!-- Honeypot Field (Hidden) -->
+                <div style="display: none;">
+                    <label for="honeypot">Leave this field blank</label>
+                    <input type="text" id="honeypot" name="honeypot">
+                </div>
+
                 <div class="form-group">
                     <label class="form-label">Name</label>
                     <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-input" placeholder="Your Email" required>
                 </div>
 
                 <div class="form-group">
@@ -47,6 +58,7 @@
                     style="width: 100%; justify-content: center; background: var(--text-primary); color: white; border: none;">
                     <i class="fas fa-paper-plane"></i> Send Message
                 </button>
+                <p id="form-status" style="margin-top: 10px; display: none;"></p>
             </form>
 
             <div style="text-align: center; margin-top: 32px;">
@@ -58,6 +70,46 @@
         </section>
 
     </div> <!-- End Container -->
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "DHGP03ea9ozV-BfSo",
+            });
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const honeypot = document.getElementById('honeypot').value;
+            if (honeypot) return;
+
+            const status = document.getElementById('form-status');
+            status.style.display = 'block';
+            status.style.color = 'var(--text-secondary)';
+            status.innerHTML = 'Sending...';
+
+            const formData = new FormData(this);
+            const templateParams = {
+                name: formData.get('name').replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+                email: formData.get('email').replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+                subject: formData.get('subject') ? formData.get('subject').replace(/</g, "&lt;").replace(/>/g, "&gt;") : "No Subject",
+                message: formData.get('message').replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            };
+
+            emailjs.send('service_n1jzzuk', 'template_x2ymntu', templateParams)
+                .then(function () {
+                    status.style.color = 'green';
+                    status.innerHTML = 'Message sent successfully!';
+                    document.getElementById('contact-form').reset();
+                }, function () {
+                    status.style.color = 'red';
+                    status.innerHTML = 'Failed to send message. Please try again later.';
+                });
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="site-footer">
